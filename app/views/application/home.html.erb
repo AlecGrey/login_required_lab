@@ -1,0 +1,7 @@
+<% if flash[:success] %>
+    <p><%= flash[:success] %></p>
+<% end %>
+
+<h1>Welcome, <%= session[:name] %>.</h1>
+
+<%= link_to "Super secret fancy logged-in only page!", secret_path %>

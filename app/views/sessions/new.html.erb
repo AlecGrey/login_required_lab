@@ -1,0 +1,12 @@
+<h1>Login</h1>
+
+<% if flash[:error] %>
+    <p><%= flash[:error] %></p>
+<% end %>
+
+<%= form_tag login_path, method: :post do %>
+
+<%= text_field_tag 'name' %>
+<%= submit_tag 'login' %>
+
+<% end %>
